@@ -20,7 +20,7 @@ public:
 	void operator *(char);
 	void getStr(void);
 private:
-	char str[256];
+	char str[10];
 	//int chislo;
 };
 
@@ -54,7 +54,7 @@ void String::operator-(char s)
 
 void String::operator*(char s)
 {
-	for (int i = 1; i <= 27; i++)
+	for (int i = 0; i <= 10; i++)
 	{
 		if (str[i] = 'a-z') str[i] = s;
 	}
@@ -120,6 +120,4 @@ void main()
 	cout << "New str3: ";
 	string3.getStr();
 	cout << endl;
-
-//delete[] str1, str2;
 }
